@@ -4,7 +4,7 @@ const Address = (props) => {
 
 
     const getWalletAddress = async (mnemonic)=>{
-        const url = 'http://localhost:3005/walletAddress';
+        const url = 'https://web-based-wallet-n0vi.onrender.com/walletAddress';
         const bodyData = {
             arr:props.phrase
         }

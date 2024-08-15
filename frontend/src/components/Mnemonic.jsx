@@ -4,7 +4,8 @@ const Mnemonic = (props) => {
 
     async function getMnemonic(){
         try {
-            const response = await fetch('http://localhost:3005/Mnemonic');
+            // const response = await fetch('http://localhost:3005/Mnemonic');
+            const response = await fetch('https://web-based-wallet-n0vi.onrender.com/Mnemonic');
             const data = await response.json();
         props.setPhrase(data.mnemonic);
         props.isGetMnemonic(true);
